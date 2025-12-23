@@ -1,3 +1,4 @@
+@use '../support' as *;
 // Media query
 
 // Media query mixin
@@ -23,11 +24,11 @@
 // Responsive container
 
 @mixin container {
-  padding-right: $gutter-spacing-sm;
-  padding-left: $gutter-spacing-sm;
+  padding-right: var(--gutter-spacing-sm);
+  padding-left: var(--gutter-spacing-sm);
 
   @include mq(md) {
-    padding-right: $gutter-spacing;
-    padding-left: $gutter-spacing;
+    padding-right: var(--gutter-spacing);
+    padding-left: var(--gutter-spacing);
   }
 }

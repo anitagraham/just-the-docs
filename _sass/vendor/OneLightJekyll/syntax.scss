@@ -1,4 +1,49 @@
 // Generated with OneLightJekyll applied to Atom's One Light theme
+.highlight {
+  --backgroundColor: #f9f9f9;
+  --textColor: #383942;
+}
+  .c {
+    --textColor: #9fa0a6;
+  }
+  .err {
+    --backgroundColor: #e05151;
+    --textColor: #fff;
+  }
+
+  .k {
+    --textColor: #a625a4;
+  }
+
+  .l {
+    --textColor: #50a04f;
+  }
+
+  .n, .o, .p {
+    --textColor: #383942;
+  }
+
+  .cm, .cp, .c1, .cs {
+    color: #9fa0a6;
+    font-style: italic;
+  }
+  .ge {
+    font-style: italic;
+  }
+  .gs {
+    font-weight: 700;
+  }
+  .kc, .kd, .kn, .kr, .kp, .kt {
+    --textColor: #a625a4;
+  }
+  .ld, .s {
+    --textColor:  #50a04f;
+  }
+  .m, .na, .nc, .ne, .ni, .nl, .no {
+    --textColor: #b66a00;
+  }
+
+}
 
 .highlight,
 pre.highlight {

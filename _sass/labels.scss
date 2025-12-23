@@ -8,30 +8,30 @@
 .label-blue:not(g) {
   display: inline-block;
   padding: 0.16em 0.56em;
-  margin-right: $sp-2;
-  margin-left: $sp-2;
-  color: $white;
+  margin-right: var(--sp-2);
+  margin-left: var(--sp-2);
+  color: var(--white);
   text-transform: uppercase;
   vertical-align: middle;
-  background-color: $blue-100;
+  background-color: var(--blue-100);
   border-radius: 12px;
 
   @include fs-2;
 }
 
 .label-green:not(g) {
-  background-color: $green-200;
+  background-color: var(--green-200);
 }
 
 .label-purple:not(g) {
-  background-color: $purple-100;
+  background-color: var(--purple-100);
 }
 
 .label-red:not(g) {
-  background-color: $red-200;
+  background-color: var(--red-200);
 }
 
 .label-yellow:not(g) {
-  color: $grey-dk-200;
-  background-color: $yellow-200;
+  color: var(--grey-dk-200);
+  background-color: var(--yellow-200);
 }

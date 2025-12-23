@@ -8,15 +8,15 @@
   & > code {
     padding: 0.2em 0.15em;
     font-weight: 400;
-    background-color: $code-background-color;
-    border: $border $border-color;
-    border-radius: $border-radius;
+    background-color: var(--code-background-color);
+    border: var(--border) var(--border-color);
+    border-radius: var(--border-radius);
   }
 }
 
 // Avoid appearance of dark border around visited code links in Safari
 a:visited code {
-  border-color: $border-color;
+  border-color: var(--border-color);
 }
 
 // Content structure for highlighted code blocks using fences or Liquid
@@ -71,9 +71,9 @@ div.highlighter-rouge,
 div.listingblock > div.content,
 figure.highlight {
   margin-top: 0;
-  margin-bottom: $sp-3;
-  background-color: $code-background-color;
-  border-radius: $border-radius;
+  margin-bottom: var(--sp-3);
+  background-color: var(--code-background-color);
+  border-radius: var(--border-radius);
   box-shadow: none;
   -webkit-overflow-scrolling: touch;
   position: relative;
@@ -82,18 +82,18 @@ figure.highlight {
   // copy button (or other button)
   // the button appear only when there is a hover on the code or focus on button
   > button {
-    width: $sp-3;
+    width: var(--sp-3);
     opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
-    border: $sp-3 solid $code-background-color;
-    background-color: $code-background-color;
-    color: $body-text-color;
+    border: var(--sp-3) solid var(--code-background-color);
+    background-color: var(--code-background-color);
+    color: var(--body-text-color);
     box-sizing: content-box;
 
     svg {
-      fill: $body-text-color;
+      fill: var(--body-text-color);
     }
 
     &:active {
@@ -122,7 +122,7 @@ figure.highlight {
 @mixin scroll-and-spacing($code-div, $pre-select) {
   #{$code-div} {
     overflow-x: auto;
-    padding: $sp-3;
+    padding: var(--sp-3);
     margin: 0;
     border: 0;
   }
@@ -143,7 +143,7 @@ div.highlighter-rouge {
 // for AsciiDoc. we also need to fix the margins for its parent container.
 div.listingblock {
   margin-top: 0;
-  margin-bottom: $sp-3;
+  margin-bottom: var(--sp-3);
 
   @include scroll-and-spacing("div.content", "div.content > pre");
 }
@@ -158,7 +158,7 @@ figure.highlight {
   pre,
   :not(pre) > code {
     overflow-x: auto;
-    padding: $sp-3;
+    padding: var(--sp-3);
     margin: 0;
     border: 0;
   }
@@ -169,7 +169,7 @@ figure.highlight {
 
 // setting the spacing and scrollbar on the thirt level for the second case
 .highlight .table-wrapper {
-  padding: $sp-3 0;
+  padding: var(--sp-3) 0;
   margin: 0;
   border: 0;
   box-shadow: none;
@@ -178,7 +178,7 @@ figure.highlight {
   pre {
     min-width: 0;
     padding: 0;
-    background-color: $code-background-color;
+    background-color: var(--code-background-color);
     border: 0;
 
     @include fs-2;
@@ -186,8 +186,8 @@ figure.highlight {
 
   td.gl {
     width: 1em;
-    padding-right: $sp-3;
-    padding-left: $sp-3;
+    padding-right: var(--sp-3);
+    padding-left: var(--sp-3);
   }
 
   pre {
@@ -199,21 +199,21 @@ figure.highlight {
 // Code examples: html render of a code
 .code-example,
 .listingblock > .title {
-  padding: $sp-3;
-  margin-bottom: $sp-3;
+  padding: var(--sp-3);
+  margin-bottom: var(--sp-3);
   overflow: auto;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
 
   + .highlighter-rouge,
   + .sectionbody .listingblock,
   + .content,
   + figure.highlight {
     position: relative;
-    margin-top: -$sp-4;
-    border-right: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
-    border-left: 1px solid $border-color;
+    margin-top: calc(var(--sp-4) * -1);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
@@ -229,18 +229,18 @@ code.language-mermaid {
 // Override OneDarkJekyll Colors for Code Blocks
 .highlight,
 pre.highlight {
-  background: $code-background-color; // Code Background
-  // For Backwards Compatibility Before $code-linenumber-color was added
+  background: var(--code-background-color); // Code Background
+  // For Backwards Compatibility Before var(--code-linenumber-color) was added
   @if variable-exists(code-linenumber-color) {
-    color: $code-linenumber-color; // Code Line Numbers
+    color: var(--code-linenumber-color); // Code Line Numbers
   } @else {
-    color: $body-text-color; // Code Line Numbers
+    color: var(--body-text-color); // Code Line Numbers
   }
 }
 
 // Override OneDarkJekyll Colors for Code Blocks
 .highlight pre {
-  background: $code-background-color; // Code Background
+  background: var(--code-background-color); // Code Background
 }
 
 // {% endraw %}
