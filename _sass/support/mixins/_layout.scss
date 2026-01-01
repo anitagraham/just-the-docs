@@ -1,4 +1,5 @@
-@use '../support' as *;
+@use "sass:map";
+@use '../variables';
 // Media query
 
 // Media query mixin
@@ -8,7 +9,7 @@
 // }
 @mixin mq($name) {
   // Retrieves the value from the key
-  $value: map-get($media-queries, $name);
+  $value: map.get(variables.$media-queries, $name);
 
   // If the key exists in the map
   @if $value {
@@ -17,7 +18,7 @@
       @content;
     }
   } @else {
-    @warn "No value could be retrieved from `#{$media-query}`. Please make sure it is defined in `$media-queries` map.";
+    @warn "No value could be retrieved from `#{variables.$media-query}`. Please make sure it is defined in `$media-queries` map.";
   }
 }
 

@@ -1,3 +1,5 @@
+@use './support'as *;
+@use './support/table_variables';
 // Tables
 // stylelint-disable max-nesting-depth, selector-no-type, selector-max-type
 
@@ -5,12 +7,12 @@
   display: block;
   width: 100%;
   max-width: 100%;
-  margin-bottom: $sp-5;
+  margin-bottom: var(--margin);
   overflow-x: auto;
-  border-radius: $border-radius;
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.12),
-    0 3px 10px rgba(0, 0, 0, 0.08);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+    //0 1px 2px rgba(0, 0, 0, 0.12),
+    //0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 table {
@@ -21,11 +23,11 @@ table {
 
 th,
 td {
-  min-width: 7.5rem;
-  padding: $sp-2 $sp-3;
-  background-color: $table-background-color;
-  border-bottom: $border rgba($border-color, 0.5);
-  border-left: $border $border-color;
+  min-width: var(--min-width);
+  padding: var(--padding);
+  background-color: var(--background-color);
+  border-bottom: var(--border) color-mix(var(--border-color), transparent 50%);
+  border-left: var(--border) var(--border-color);
 
   @include fs-3;
 
@@ -43,7 +45,7 @@ tbody {
       }
 
       td {
-        padding-bottom: $sp-3;
+        padding-bottom: var(--padding);
       }
     }
   }
@@ -51,6 +53,6 @@ tbody {
 
 thead {
   th {
-    border-bottom: $border $border-color;
+    border-bottom: var(--border) var(--border-color);
   }
 }

@@ -1,5 +1,6 @@
 // Main nav, breadcrumb, etc...
 // stylelint-disable selector-no-type, max-nesting-depth, selector-max-compound-selectors, selector-max-type, selector-max-specificity
+@use "support" as *;
 @use 'sass:color';
 .nav-list {
   padding: 0;
@@ -75,13 +76,13 @@
 
       width: var(--nav-list-item-height-sm);
       height: var(--nav-list-item-height-sm);
-      padding: #{var(--nav-list-item-height-sm) * 0.25};
+      padding: calc(var(--nav-list-item-height-sm) * 0.25);
       color: var(--link-color);
 
       @include mq(md) {
         width: var(--nav-list-item-height);
         height: var(--nav-list-item-height);
-        padding: #{var(--nav-list-item-height) * 0.25};
+        padding: calc(var(--nav-list-item-height) * 0.25) ;
       }
 
       &:hover {

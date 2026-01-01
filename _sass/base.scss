@@ -1,8 +1,9 @@
 // Base element style overrides
 // stylelint-disable selector-no-type, selector-max-type, selector-max-specificity, selector-max-id
-
+@use 'support' as *;
 :root {
-  color-scheme: $color-scheme;
+  --color-scheme: 'light';
+  color-scheme: var(--color-scheme);
 }
 
 * {
@@ -69,7 +70,7 @@ a:not([class]) {
   text-underline-offset: 2px;
 
   &:hover {
-    text-decoration-color: rgba(var(--link-color), 0.45);
+    text-decoration-color: color-mix(var(--link-color), transparent 45%);
   }
 }
 

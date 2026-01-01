@@ -1,0 +1,107 @@
+@use "sass:map";
+@use "sass:color";
+@use "variables" as *;
+@use "colors";
+@use '../support/mixins/buttons' as *;
+
+.btn {
+  --shadow-color: black;
+  --disabled-dark: #666666;
+  --disabled-light: #e5e5e5;
+  --shadow-25: color-mix(var(--shadow-color), transparent 25%);
+  --shadow-12: color-mix(var(--shadow-color), transparent 12%);
+  --shadow-08: color-mix(var(--shadow-color), transparent 08%);
+
+  --background-color: var(--base-button-background);
+  --text-color: var(--base-button-color);
+  --box-shadow: 0 1px 2px var(--shadow12),
+                0 3px 10px var(--shadow-08);
+
+  &:focus,
+  &:focus:hover,
+  &.selected:focus {
+    --box-shadow: 0 0 0 3px var(--shadow-25)
+  }
+
+
+  &:hover,
+  &.zeroclipboard-is-hover {
+    --text-color: color-mix(var(--link-color), black 2%);
+  }
+
+  &:hover,
+  &:active,
+  &.zeroclipboard-is-hover,
+  &.zeroclipboard-is-active {
+    --background-color: color-mix(var(--base-button-color),  black 1%);
+  }
+
+  &:active,
+  &.selected,
+  &.zeroclipboard-is-active {
+    --background-color: color-mix(var(--background-color), black 3%);
+    --box-shadow: inset 0 2px 4px var(--shadow-25);
+  }
+
+  &.selected:hover {
+    --background-color:  color-mix(var(--shadow-color), black 5%);
+  }
+
+
+  &:disabled,
+  &.disabled {
+    &,
+    &:hover {
+      --text-color: color-mix(var(--disabled-light), transparent 5%);
+      --background-color: color.adjust(var(--disabled-dark), transparent 5%);
+    }
+  }
+}
+
+.btn-outline {
+  --shadow-color: var(--grey-lt-200);
+  --text-color: var(--link-color);
+  --background-color: transparent;
+  --box-shadow: inset 0 0 0 2px var(--shadow-color);
+
+  &:hover,
+  &:active,
+  &.zeroclipboard-is-hover,
+  &.zeroclipboard-is-active {
+    --text-color: color-mix(var(--link-color), black 4%);
+    --background-color: transparent;
+    --box-shadow: inset 0 0 0 3px var(--outline-shadow);
+  }
+
+  &:focus {
+    --shadow-color: blue;
+    --box-shadow:
+      inset 0 0 0 2px var(--shadow-color),
+      0 0 0 3px var(--shadow-25);
+  }
+
+  &:focus:hover,
+  &.selected:focus {
+    --shadow-color: var(--gray-dark-100);
+    --box-shadow: inset 0 0 0 2px var(--shadow-color);
+  }
+}
+.btn-primary {
+  --text-color: var(--white);
+  --background-color: var(--btn-primary-color);
+}
+
+.btn-purple {
+  --text-color: var(--white);
+  --background-color: var(--purple-100);
+}
+
+.btn-blue {
+  --text-color: var(--white);
+  --background-color: var(--blue-000);
+}
+
+.btn-green {
+  --text-color: var(--white);
+  --background-color: var(--green-100);
+}

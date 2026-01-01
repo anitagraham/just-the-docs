@@ -1,32 +1,34 @@
 // Colored button
 @use 'sass:color';
+@use '../colors';
 
-@mixin btn-color($fg, $bg) {
-  color: $fg;
-  background-color: color.change($bg, $darkness: 2%);
+@mixin btn-color($fg, $bg){
+
+  color: var(--text-color);
+  background-color: color.change(var(--background-color), $darkness: 2%);
   background-image: linear-gradient(
-      color.change($bg, $lightness: 5%),
-      color.change($bg, $darkness: 2%));
+      color.change(var(--background-color), $lightness: 5%),
+      color.change(var(--background-color), $darkness: 2%));
   box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.25),
     0 4px 10px rgba(0, 0, 0, 0.12);
 
   &:hover,
   &.zeroclipboard-is-hover {
-    color: $fg;
-    background-color: color.change($bg, $darkness: 4%);
-    background-image: linear-gradient((color.change($bg, $lightness: 2%), color.change($bg, $darkness: 4%)));
+    color: var(--text-color);
+    background-color: color.change(var(--background-color), $darkness: 4%);
+    background-image: linear-gradient((color.change(var(--background-color), $lightness: 2%), color.change(var(--background-color), $darkness: 4%)));
   }
 
   &:active,
   &.selected,
   &.zeroclipboard-is-active {
-    background-color: color.change($bg, $darkness: 5%);
+    background-color: color.change(var(--background-color), $darkness: 5%);
     background-image: none;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
   }
 
   &.selected:hover {
-    background-color: color.change($bg, $darkness: 10%);
+    background-color: color.change(var(--background-color), $darkness: 10%);
   }
 }

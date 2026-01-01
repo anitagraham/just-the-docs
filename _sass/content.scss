@@ -1,10 +1,11 @@
 @charset "UTF-8";
+@use 'support' as *;
 
 // Styles for rendered markdown in the .main-content container
 // stylelint-disable selector-no-type, max-nesting-depth, selector-max-compound-selectors, selector-max-type, selector-max-specificity, selector-max-id
 
 .main-content {
-  line-height: $content-line-height;
+  line-height: var(--content-line-height);
 
   ol,
   ul,

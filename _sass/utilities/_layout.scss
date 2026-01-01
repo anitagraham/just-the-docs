@@ -1,3 +1,5 @@
+@use "sass:map";
+@use '../support';
 // Utility classes for layout
 
 // Display
@@ -22,10 +24,10 @@
   display: none !important;
 }
 
-@each $media-query in map-keys($media-queries) {
-  @for $i from 1 through length($spacers) {
-    @include mq($media-query) {
-      $size: #{map-get($spacers, sp-#{$i - 1})};
+@each $media-query in map.keys(support.$media-queries) {
+  @for $i from 1 through length(support.$spacers) {
+    @include support.mq($media-query) {
+      $size: #{map.get(support.$spacers, sp-#{$i - 1})};
       $scale: #{$i - 1};
 
       // .d-sm-block, .d-md-none, .d-lg-inline

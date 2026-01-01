@@ -1,3 +1,4 @@
+@use '../support' as *;
 // Utility classes for typography
 
 .fs-1 {
@@ -61,11 +62,11 @@
 }
 
 .lh-default {
-  line-height: $body-line-height;
+  line-height: var(--body-line-height);
 }
 
 .lh-tight {
-  line-height: $body-heading-line-height;
+  line-height: var(--body-heading-line-height);
 }
 
 .ls-5 {

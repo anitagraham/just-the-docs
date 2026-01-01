@@ -1,9 +1,12 @@
+@use "./layout";
+@use "../variables";
+
 @mixin fs-1 {
   & {
     font-size: var(--font-size-1) !important;
   }
 
-  @include mq(sm) {
+  @include layout.mq(sm) {
     font-size: var(--font-size-1-sm) !important;
   }
 }
@@ -13,7 +16,7 @@
     font-size: var(--font-size-2) !important;
   }
 
-  @include mq(sm) {
+  @include layout.mq(sm) {
     font-size: var(--font-size-3) !important;
   }
 }
@@ -23,7 +26,7 @@
     font-size: var(--font-size-3) !important;
   }
 
-  @include mq(sm) {
+  @include layout.mq(sm) {
     font-size: var(--font-size-4) !important;
   }
 }
@@ -33,7 +36,7 @@
     font-size: var(--font-size-4) !important;
   }
 
-  @include mq(sm) {
+  @include layout.mq(sm) {
     font-size: var(--font-size-5) !important;
   }
 }
@@ -43,7 +46,7 @@
     font-size: var(--font-size-5) !important;
   }
 
-  @include mq(sm) {
+  @include layout.mq(sm) {
     font-size: var(--font-size-6) !important;
   }
 }
@@ -53,7 +56,7 @@
     font-size: var(--font-size-6) !important;
   }
 
-  @include mq(sm) {
+  @include layout.mq(sm) {
     font-size: var(--font-size-7) !important;
     line-height: var(--body-heading-line-height);   }
 }
@@ -63,7 +66,7 @@
     font-size: var(--font-size-7) !important;
     line-height: var(--body-heading-line-height);   }
 
-  @include mq(sm) {
+  @include layout.mq(sm) {
     font-size: var(--font-size-8) !important;
   }
 }
@@ -73,7 +76,7 @@
     font-size: var(--font-size-8) !important;
     line-height: var(--body-heading-line-height);   }
 
-  @include mq(sm) {
+  @include layout.mq(sm) {
     font-size: var(--font-size-9) !important;
   }
 }
@@ -83,7 +86,7 @@
     font-size: var(--font-size-9) !important;
     line-height: var(--body-heading-line-height);   }
 
-  @include mq(sm) {
+  @include layout.mq(sm) {
     font-size: var(--font-size-10) !important;
   }
 }
@@ -93,7 +96,7 @@
     font-size: var(--font-size-10) !important;
     line-height: var(--body-heading-line-height);   }
 
-  @include mq(sm) {
+  @include layout.mq(sm) {
     font-size: var(--font-size-10-sm) !important;
   }
 }

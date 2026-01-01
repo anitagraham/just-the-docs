@@ -1,3 +1,5 @@
+@use './support'as *;
+@use './support/code_variables';
 // Code and syntax highlighting
 // stylelint-disable selector-no-qualifying-type, declaration-block-semicolon-newline-after,declaration-block-single-line-max-declarations, selector-no-type, selector-max-type, scss/comment-no-empty
 
@@ -8,7 +10,7 @@
   & > code {
     padding: 0.2em 0.15em;
     font-weight: 400;
-    background-color: var(--code-background-color);
+    background-color: var(--background-color);
     border: var(--border) var(--border-color);
     border-radius: var(--border-radius);
   }
@@ -72,7 +74,7 @@ div.listingblock > div.content,
 figure.highlight {
   margin-top: 0;
   margin-bottom: var(--sp-3);
-  background-color: var(--code-background-color);
+  background-color: var(--background-color);
   border-radius: var(--border-radius);
   box-shadow: none;
   -webkit-overflow-scrolling: touch;

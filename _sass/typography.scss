@@ -1,5 +1,7 @@
 // Typography
 // stylelint-disable selector-no-type, selector-max-type, selector-max-specificity, selector-max-id
+@use "support" as *;
+@use 'sass:color';
 
 h1,
 .text-alpha {
@@ -47,7 +49,7 @@ h6,
 }
 
 .text-mono {
-  font-family: $mono-font-family !important;
+  font-family: var(--mono-font-family), monospace !important;
 }
 
 .text-left {

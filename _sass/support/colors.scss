@@ -1,0 +1,85 @@
+:root {
+  --white: #fff ;
+  --grey_dk_000: #959396 ;
+  --grey_dk_100: #5c5962 ;
+  --grey_dk_200: #44434d ;
+  --grey_dk_250: #302d36 ;
+  --grey_dk_300: #27262b ;
+  --grey_lt_000: #f5f6fa ;
+  --grey_lt_100: #eeebee ;
+  --grey_lt_200: #ecebed ;
+  --grey_lt_300: #e6e1e8 ;
+  --purple_000: #7253ed ;
+  --purple_100: #5e41d0 ;
+  --purple_200: #4e26af ;
+  --purple_300: #381885 ;
+  --blue_000: #2c84fa ;
+  --blue_100: #2869e6 ;
+  --blue_200: #264caf ;
+  --blue_300: #183385 ;
+  --green_000: #41d693 ;
+  --green_100: #11b584 ;
+  --green_200: #009c7b ;
+  --green_300: #026e57 ;
+  --yellow_000: #ffeb82 ;
+  --yellow_100: #fadf50 ;
+  --yellow_200: #f7d12e ;
+  --yellow_300: #e7af06 ;
+  --red_000: #f77e7e ;
+  --red_100: #f96e65 ;
+  --red_200: #e94c4c ;
+  --red_300: #dd2e2e ;
+
+  // non-standard colors
+  //from light.scss
+  --neutral-white: #f7f7f7;
+
+  //from dark.scss
+  --indigo: #31343f; // OneDarkJekyll default for syntax-one-dark-vivid
+  --light-gray: #dee2f7; // OneDarkJekyll .nf for syntax-one-dark-vivid
+}
+// standard Colors
+  $white: #fff;
+  $grey_dk_000: #959396;
+  $grey_dk_100: #5c5962;
+  $grey_dk_200: #44434d;
+  $grey_dk_250: #302d36;
+  $grey_dk_300: #27262b;
+  $grey_lt_000: #f5f6fa;
+  $grey_lt_100: #eeebee;
+  $grey_lt_200: #ecebed;
+  $grey_lt_300: #e6e1e8;
+  $purple_000: #7253ed;
+  $purple_100: #5e41d0;
+  $purple_200: #4e26af;
+  $purple_300: #381885;
+  $blue_000: #2c84fa;
+  $blue_100: #2869e6;
+  $blue_200: #264caf;
+  $blue_300: #183385;
+  $green_000: #41d693;
+  $green_100: #11b584;
+  $green_200: #009c7b;
+  $green_300: #026e57;
+  $yellow_000: #ffeb82;
+  $yellow_100: #fadf50;
+  $yellow_200: #f7d12e;
+  $yellow_300: #e7af06;
+  $red_000: #f77e7e;
+  $red_100: #f96e65;
+  $red_200: #e94c4c;
+  $red_300: #dd2e2e;
+
+// non-standard colors
+//from light.scss
+  $neutral-white: #f7f7f7;
+
+//from dark.scss
+  $indigo: #31343f; // OneDarkJekyll default for syntax-one-dark-vivid
+  $light-gray: #dee2f7; // OneDarkJekyll .nf for syntax-one-dark-vivid
+
+// elsewhere
+// Borders
+
+
+// Grid

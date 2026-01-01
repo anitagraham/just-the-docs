@@ -1,0 +1,11 @@
+.table-wrapper {
+  --box-shadow:  0 1px 2px var(--shadow-12),
+                 0 3px 10px var(--shadow-08);
+  --margin: var(--sp-5);
+}
+.td {
+  --min-width: 7.5rem;
+  --padding: var(--sp-2) var(--sp-3);
+  --background-color: var(--table-background-color);
+  --padding: var(--sp-3);
+}
