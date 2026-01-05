@@ -32,11 +32,11 @@
 
   // non-standard colors
   //from light.scss
-  --neutral-white: #f7f7f7;
+  --neutral_white: #f7f7f7;
 
   //from dark.scss
   --indigo: #31343f; // OneDarkJekyll default for syntax-one-dark-vivid
-  --light-gray: #dee2f7; // OneDarkJekyll .nf for syntax-one-dark-vivid
+  --grey_lt_400: #dee2f7; // OneDarkJekyll .nf for syntax-one-dark-vivid
 }
 
 // sass variables needed in some contexts
@@ -74,11 +74,11 @@
 
 // non-standard colors
 //from light.scss
-  $neutral-white: #f7f7f7;
+  $neutral_white: #f7f7f7;
 
 //from dark.scss
   $indigo: #31343f; // OneDarkJekyll default for syntax-one-dark-vivid
-  $light-gray: #dee2f7; // OneDarkJekyll .nf for syntax-one-dark-vivid
+  $light_grey: #dee2f7; // OneDarkJekyll .nf for syntax-one-dark-vivid
 
 // elsewhere
 // Borders

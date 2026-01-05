@@ -21,7 +21,7 @@ div.opaque {
 
 p.{{ callout[0] }}, blockquote.{{ callout[0] }} {
     background: color-mix(var(--{{ callout[1].color }}_{{ callout_background_hue }}, transparent {{ callout_opacity }}));
-    border-left: var(--border-radius) solid var(--{{ callout[1].color }})_{{ callout_color_hue }};
+    border-left: var(--border-radius) solid var(--{{ callout[1].color }}_{{ callout_color_hue }});
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     padding: .8rem;

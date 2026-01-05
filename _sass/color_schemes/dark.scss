@@ -1,29 +1,30 @@
 @use 'sass:color';
+@use '../support';
 @forward "../vendor/OneDarkJekyll/syntax"; // this is the one-dark-vivid atom syntax theme
 
 :root {
   --color-scheme: dark;
-  --body-background-color: var(--grey-dk-300);
-  --body-heading-color: var(--grey-lt-000);
-  --body-text-color: var(--grey-lt-300);
-  --link-color: var(--blue-000);
-  --nav-child-link-color: var(--grey-dk-000);
-  --sidebar-color: var(--grey-dk-300);
-  --base-button-color: var(--grey-dk-250);
-  --btn-primary-color: var(--blue-200);
+  --body-background-color: var(--grey_dk_300);
+  --body-heading-color: var(--grey_lt_000);
+  --body-text-color: var(--grey_lt_300);
+  --link-color: var(--blue_000);
+  --nav-child-link-color: var(--grey_dk_000);
+  --sidebar-color: var(--grey_dk_300);
+  --base-button-background: var(--grey_dk_250);
+  --btn-primary-color: var(--blue_200);
   --code-background-color: var(--indigo); // OneDarkJekyll default for syntax-one-dark-vivid
-  --code-linenumber-color: var(--light-gray); // OneDarkJekyll .nf for syntax-one-dark-vivid
-  --table-background-color: var(--grey-dk-250);
-  --search-background-color: var(--grey-dk-250);
-  --search-result-preview-color: var(--grey-dk-000);
-  --border-color: var(--grey-dk-200);
+  --code-linenumber-color: var(--grey_lt_400); // OneDarkJekyll .nf for syntax-one-dark-vivid
+  --table-background-color: var(--grey_dk_250);
+  --search-background-color: var(--grey_dk_250);
+  --search-result-preview-color: var(--grey_dk_000);
+  --border-color: var(--grey_dk_200);
 
 //  color variations
-  --feedback-color: color.adjust(var(--sidebar-color), $darkness: 3%);
+  --feedback-color: color-mix(var(--sidebar-color), transparent 3%);
 }
 
 //some scss variables required for functions (duplicating the css variables)
 $color-scheme: dark;
-$base-button-color: var(--grey-dk-250);
-$btn-primary-color: var(--blue-200);
-$link-color: var(--blue-000);
+$base-button-color: var(--grey_dk_250);
+$btn-primary-color: var(--blue_200);
+$link-color: var(--blue_000);

@@ -11,12 +11,13 @@
   margin-left: auto !important;
 }
 
+
 @for $i from 1 through length(support.$spacers) {
   $size: #{map.get(support.$spacers, sp-#{$i - 1})};
   $scale: #{$i - 1};
 
   // .m-0, .m-1, .m-2...
-  .m-#{$scale} {
+  .m_#{$scale} {
     margin: #{$size} !important;
   }
   .mt-#{$scale} {

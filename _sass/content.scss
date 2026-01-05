@@ -44,7 +44,7 @@
         position: absolute;
         top: 0.2em;
         left: -1.6em;
-        color: var(--grey-dk-000);
+        color: var(--grey_dk_000);
         content: counter(step-counter);
         counter-increment: step-counter;
         @include fs-3;
@@ -74,7 +74,7 @@
       &::before {
         position: absolute;
         margin-left: -1.4em;
-        color: var(--grey-dk-000);
+        color: var(--grey_dk_000);
         content: "•";
       }
     }

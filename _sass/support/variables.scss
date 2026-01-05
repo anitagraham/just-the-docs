@@ -32,7 +32,7 @@
 
   --border: 1px solid ;
   --border-radius: 4px ;
-  --border-color: var(--grey-lt-100) ;
+  --border-color: var(--grey_lt_100) ;
 
   // Grid system
 
@@ -63,9 +63,9 @@
   --shadow-color: black;
   --disabled-dark: #666666;
   --disabled-light: #e5e5e5;
-  --shadow-25: color-mix(var(--shadow-color), transparent 25%);
-  --shadow-12: color-mix(var(--shadow-color), transparent 12%);
-  --shadow-08: color-mix(var(--shadow-color), transparent 08%);
+  --shadow_25: color-mix(var(--shadow-color), transparent 25%);
+  --shadow_12: color-mix(var(--shadow-color), transparent 12%);
+  --shadow_08: color-mix(var(--shadow-color), transparent 08%);
 
 //  try spacing variables
   --spacing-unit: 1rem;

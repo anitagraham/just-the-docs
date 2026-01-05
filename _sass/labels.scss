@@ -14,25 +14,25 @@
   color: var(--white);
   text-transform: uppercase;
   vertical-align: middle;
-  background-color: var(--blue-100);
+  background-color: var(--blue_100);
   border-radius: 12px;
 
   @include fs-2;
 }
 
 .label-green:not(g) {
-  background-color: var(--green-200);
+  background-color: var(--green_200);
 }
 
 .label-purple:not(g) {
-  background-color: var(--purple-100);
+  background-color: var(--purple_100);
 }
 
 .label-red:not(g) {
-  background-color: var(--red-200);
+  background-color: var(--red_200);
 }
 
 .label-yellow:not(g) {
-  color: var(--grey-dk-200);
-  background-color: var(--yellow-200);
+  color: var(--grey_dk_200);
+  background-color: var(--yellow_200);
 }

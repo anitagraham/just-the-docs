@@ -4,25 +4,25 @@
 :root {
 --color-scheme: light;
 --body-background-color: var(--white);
---body-heading-color: var(--grey-dk-300);
---body-text-color: var(--grey-dk-100);
---link-color: var(--purple-000);
---nav-child-link-color: var(--grey-dk-100);
---sidebar-color: var(--neutral-white);
---base-button-color: var(--grey-lt-400);
---btn-primary-color: var(--purple-100);
---code-background-color: var(--grey-lt-000);
+--body-heading-color: var(--grey_dk_300);
+--body-text-color: var(--grey_dk_100);
+--link-color: var(--purple_000);
+--nav-child-link-color: var(--grey_dk_100);
+--sidebar-color: var(--neutral_white);
+--base-button-color: var(--grey_lt_400);
+--btn-primary-color: var(--purple_100);
+--code-background-color: var(--grey_lt_000);
 --table-background-color: var(--white);
 --search-background-color: var(--white);
---search-result-preview-color: var(--grey-dk-000);
+--search-result-preview-color: var(--grey_dk_000);
 
 //  color variations
-  --feedback-color: color.adjust(var(--sidebar-color), $darkness: 3%);
+  --feedback-color: color-mix(var(--sidebar-color), transparent 3%);
 }
 
 
 //some scss variables required for functions (duplicating the css variables)
 $color-scheme: light;
-$base-button-color: var(--grey-dk-250);
-$btn-primary-color: var(--blue-200);
-$link-color: var(--purple-100);
+$base-button-color: var(--grey_dk_250);
+$btn-primary-color: var(--blue_200);
+$link-color: var(--purple_100);

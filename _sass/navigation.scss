@@ -204,7 +204,7 @@
 
 .breadcrumb-nav {
   @include mq(md) {
-    margin-top: -var(--sp-4);
+    margin-top: var(--sp-4);
   }
 }
 
@@ -226,7 +226,7 @@
     display: inline-block;
     margin-right: var(--sp-2);
     margin-left: var(--sp-2);
-    color: var(--grey-dk-000);
+    color: var(--grey_dk_000);
     content: "/";
   }
 

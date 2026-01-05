@@ -1,6 +1,6 @@
-@use "./color_schemes/{{ include.color_scheme }}";
-@use "./support";
-@use "./custom/setup";
+@forward "./support";
+@forward "./color_schemes/{{ include.color_scheme }}";
+@forward "./custom/setup";
 @use "./modules";
 
 {% if site.logo %}

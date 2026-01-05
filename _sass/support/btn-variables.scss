@@ -8,19 +8,19 @@
   --shadow-color: black;
   --disabled-dark: #666666;
   --disabled-light: #e5e5e5;
-  --shadow-25: color-mix(var(--shadow-color), transparent 25%);
-  --shadow-12: color-mix(var(--shadow-color), transparent 12%);
-  --shadow-08: color-mix(var(--shadow-color), transparent 08%);
+  --shadow_25: color-mix(var(--shadow-color), transparent 25%);
+  --shadow_12: color-mix(var(--shadow-color), transparent 12%);
+  --shadow_08: color-mix(var(--shadow-color), transparent 08%);
 
   --background-color: var(--base-button-background);
   --text-color: var(--base-button-color);
-  --box-shadow: 0 1px 2px var(--shadow12),
-                0 3px 10px var(--shadow-08);
+  --box-shadow: 0 1px 2px var(--shadow_12),
+                0 3px 10px var(--shadow_08);
 
   &:focus,
   &:focus:hover,
   &.selected:focus {
-    --box-shadow: 0 0 0 3px var(--shadow-25)
+    --box-shadow: 0 0 0 3px var(--shadow_25)
   }
 
 
@@ -40,7 +40,7 @@
   &.selected,
   &.zeroclipboard-is-active {
     --background-color: color-mix(var(--background-color), black 3%);
-    --box-shadow: inset 0 2px 4px var(--shadow-25);
+    --box-shadow: inset 0 2px 4px var(--shadow_25);
   }
 
   &.selected:hover {
@@ -53,13 +53,13 @@
     &,
     &:hover {
       --text-color: color-mix(var(--disabled-light), transparent 5%);
-      --background-color: color.adjust(var(--disabled-dark), transparent 5%);
+      --background-color: color-mix(var(--disabled-dark), transparent 5%);
     }
   }
 }
 
 .btn-outline {
-  --shadow-color: var(--grey-lt-200);
+  --shadow-color: var(--grey_lt_200);
   --text-color: var(--link-color);
   --background-color: transparent;
   --box-shadow: inset 0 0 0 2px var(--shadow-color);
@@ -70,19 +70,19 @@
   &.zeroclipboard-is-active {
     --text-color: color-mix(var(--link-color), black 4%);
     --background-color: transparent;
-    --box-shadow: inset 0 0 0 3px var(--outline-shadow);
+    --box-shadow: inset 0 0 0 3px var(--shadow-color);
   }
 
   &:focus {
     --shadow-color: blue;
     --box-shadow:
       inset 0 0 0 2px var(--shadow-color),
-      0 0 0 3px var(--shadow-25);
+      0 0 0 3px var(--shadow_25);
   }
 
   &:focus:hover,
   &.selected:focus {
-    --shadow-color: var(--gray-dark-100);
+    --shadow-color: var(--grey_dk_100);
     --box-shadow: inset 0 0 0 2px var(--shadow-color);
   }
 }
@@ -93,15 +93,15 @@
 
 .btn-purple {
   --text-color: var(--white);
-  --background-color: var(--purple-100);
+  --background-color: var(--purple_100);
 }
 
 .btn-blue {
   --text-color: var(--white);
-  --background-color: var(--blue-000);
+  --background-color: var(--blue_000);
 }
 
 .btn-green {
   --text-color: var(--white);
-  --background-color: var(--green-100);
+  --background-color: var(--green_100);
 }
