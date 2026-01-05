@@ -82,8 +82,7 @@
   --sp-10: calc(var(--spacing-unit) * 4.0);
 }
 
-// media queries are outside :root scope
-
+// media queries are outside :root scope, so need to be in sass variables
 // Spacing
 $spacing-unit: 1rem; // 1rem == 16px
 $spacers: (

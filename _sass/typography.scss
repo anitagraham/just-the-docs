@@ -1,7 +1,7 @@
 // Typography
 // stylelint-disable selector-no-type, selector-max-type, selector-max-specificity, selector-max-id
-@use "support" as *;
 @use 'sass:color';
+@use "support" as *;
 
 h1,
 .text-alpha {

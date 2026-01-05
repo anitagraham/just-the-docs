@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: var(--body-font-family);
+  font-family: var(--body-font-family), sans-serif;
   font-size: inherit;
   line-height: var(--body-line-height);
   color: var(--body-text-color);
@@ -75,7 +75,7 @@ a:not([class]) {
 }
 
 code {
-  font-family: var(--mono-font-family);
+  font-family: var(--mono-font-family), monospace;
   font-size: 0.75em;
   line-height: var(--body-line-height);
 }
