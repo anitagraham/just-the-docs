@@ -4,7 +4,7 @@
 @use "./modules";
 
 {% if site.logo %}
-  $logo: "{{ site.logo | relative_url }}";
+ .site-logo {--logo: url({{ site.logo | relative_url }}) }
 {% endif %}
 
 {% include css/callouts.scss.liquid color_scheme = include.color_scheme %}

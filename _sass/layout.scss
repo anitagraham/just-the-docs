@@ -145,16 +145,15 @@
   }
 }
 
-@if variable-exists(logo) {
-  .site-logo {
-    width: 100%;
-    height: 100%;
-    background-image: url(var(--logo));
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: contain;
-  }
+.site-logo {
+  width: 100%;
+  height: 100%;
+  background-image: var(--logo);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
 }
+
 
 .site-button {
   display: flex;
@@ -171,18 +170,18 @@
 
 .site-title:hover {
   background-image: linear-gradient(
-    -90deg,
-    rgba(var(--feedback-color), 1) 0%,
-    rgba(var(--feedback-color), 0.8) 80%,
-    rgba(var(--feedback-color), 0) 100%
+      -90deg,
+      rgba(var(--feedback-color), 1) 0%,
+      rgba(var(--feedback-color), 0.8) 80%,
+      rgba(var(--feedback-color), 0) 100%
   );
 }
 
 .site-button:hover {
   background-image: linear-gradient(
-    -90deg,
-    rgba(var(--feedback-color), 1) 0%,
-    rgba(var(--feedback-color), 0.8) 100%
+      -90deg,
+      rgba(var(--feedback-color), 1) 0%,
+      rgba(var(--feedback-color), 0.8) 100%
   );
 }
 
